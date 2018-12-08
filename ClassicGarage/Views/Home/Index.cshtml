@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated) {
+<div>
+    @model ClassicGarage.Models.OwnerModels
+    
+    
+
+
+
+</div>
+
+}
+else{
+<div class="jumbotron">
+    <h1>Classic Garage </h1>
+    <p class="lead">Witaj na największym serwsie  z aukcjami samochdoowymi. Kupuj Remontuj i Zarabiaj </p>
+    <p><a href="/Account/Register" class="btn btn-primary btn-lg">Zacznij Teraz &raquo;</a> <a href="/Account/Login" class="btn btn-primary btn-lg" style="background-color:red;">Zaloguj &raquo;</a></p>
+   
+
+
+
+</div>
+}
+
